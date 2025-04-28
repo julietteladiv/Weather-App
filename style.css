@@ -2,6 +2,9 @@ body {
   background-color: #f9f7fe;
   font-family:  "Roboto", sans-serif;
 }
+main{
+  padding: 30px;
+}
 
 .Weather-App {
   margin: 30px auto;
@@ -58,4 +61,10 @@ strong {
 .weather-app-container {
   display: flex;
   justify-content: space-between;
+}
+.temperature-emoji{
+      font-size: 68px;
+    line-height: 88px;
+    font-weight: bold;
+    display: flex;
 }
