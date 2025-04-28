@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="src/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,19 +12,22 @@
   <body>
     <div class="Weather-App">
     <header>
-        <form>
-            <input type="text" placeholder="Enter a city..." required class="form-input-text">
+        <form id ="search-form">
+            <input type="text" 
+            placeholder="Enter a city..." 
+            required 
+            class="form-input-text" 
+            id="search-form-input">
             <input type="submit" value="Search" class="search-form-button">
         </form>
     </header>
     <main>
       <div class="weather-app-container">
         <div>
-        <h1>Paris</h1>
+        <h1 id="city">Paris</h1>
         <p class="weather-details">
             <div class="weather-details">Thursday 15:50, overcast clouds</div>
-            <div class="weather-details">Humidity: <strong>68%</strong>, </div>
-            <div class="weather-details">Wind: <strong>5.14km/h</strong></div>
+            <div class="weather-details">Humidity: <strong>68%</strong>, Wind: <strong>5.14km/h</strong></div>
         </p>
         </div>
         <div class="temperature-emoji">
@@ -38,5 +41,6 @@
 
     <footer>This project was coded by <a href="https://github.com/julietteladiv" target="_blank">Juliette</a> is open-sourced on<a href=https://github.com/julietteladiv/Weather-App target="_blank"> Github</a>  and hosted on <a href="https://app.netlify.com/sites/weather-app-jv/overview" target="_blank">Netlifly</a> </footer>
   </div>
+  <script src="src/index.js"></script>
   </body></body>
 </html>
