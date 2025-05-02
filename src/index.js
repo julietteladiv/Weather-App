@@ -13,8 +13,8 @@ function refreshWeather(response) {
   newCity.innerHTML = response.data.city;
   newInput.innerHTML = Math.round(newTemperature);
   newDecritpion.innerHTML = response.data.condition.description;
-  newHumidity.innerHTML = response.data.temperature.humidity;
-  newWind.innerHTML = response.data.wind.speed;
+  newHumidity.innerHTML = `${response.data.temperature.humidity} %`;
+  newWind.innerHTML = `${response.data.wind.speed} km/h`;
   timeElement.innerHTML = formatDate(date);
 }
 function formatDate(date) {
