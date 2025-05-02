@@ -63,14 +63,11 @@ strong {
   justify-content: space-between;
 }
 .temperature-emoji{
-
-
     display: flex;
 }
 .emoji{
-  font-size: 44px;
-  margin-top: 16px;
-
+  width: 88px;
+  height: 88px;
 }
 .temperature{
   font-size: 88px;
@@ -78,5 +75,5 @@ strong {
 }
 .mesure{
   font-size: 24px;
-  margin-top: 16px;
+
 }
